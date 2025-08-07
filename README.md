@@ -115,12 +115,52 @@
     .dark-mode .toggle-btn {
       background-color: #3b5f8c;
     }
+    /* إعلانات */
+    .ad-container {
+      text-align: center;
+      margin: 1.5rem 0;
+      padding: 0.5rem;
+      background-color: #f0f0f0;
+      border-radius: 8px;
+    }
+    .dark-mode .ad-container {
+      background-color: #333;
+    }
+    .ad-label {
+      font-size: 0.8rem;
+      color: #777;
+      margin-bottom: 0.5rem;
+    }
+    .dark-mode .ad-label {
+      color: #aaa;
+    }
+    .ad-iframe {
+      width: 100%;
+      max-width: 728px;
+      height: 90px;
+      border: none;
+      border-radius: 4px;
+    }
+    .ad-responsive {
+      width: 100%;
+      max-width: 336px;
+      height: 280px;
+      border: none;
+      border-radius: 4px;
+    }
   </style>
 </head>
 <body>
   <button class="toggle-btn" onclick="toggleDarkMode()">الوضع الليلي</button>
   <header>📿 أذكار المسلم - By Youssef Sayed</header>
+  
   <div class="container">
+    <!-- إعلان في الأعلى -->
+    <div class="ad-container">
+      <div class="ad-label">إعلان</div>
+      <iframe class="ad-iframe" src="https://otieu.com/4/9681086" scrolling="no"></iframe>
+    </div>
+    
     <!-- Morning Azkar -->
     <div class="section">
       <h2>🌅 أذكار الصباح</h2>
@@ -139,6 +179,12 @@
       </div>
     </div>
     
+    <!-- إعلان بين أذكار الصباح والمساء -->
+    <div class="ad-container">
+      <div class="ad-label">إعلان</div>
+      <iframe class="ad-responsive" src="https://otieu.com/4/9681086" scrolling="no"></iframe>
+    </div>
+    
     <!-- Evening Azkar -->
     <div class="section">
       <h2>🌇 أذكار المساء</h2>
@@ -155,6 +201,12 @@
         <p>اللهم إني أسألك علماً نافعاً، ورزقاً طيباً، وعملاً متقبلاً.</p>
         <p>أستغفر الله العظيم وأتوب إليه. (مائة مرة)</p>
       </div>
+    </div>
+    
+    <!-- إعلان بين أذكار المساء والنوم -->
+    <div class="ad-container">
+      <div class="ad-label">إعلان</div>
+      <iframe class="ad-responsive" src="https://otieu.com/4/9681086" scrolling="no"></iframe>
     </div>
     
     <!-- Sleep Azkar -->
@@ -191,8 +243,13 @@
         <button onclick="resetCounter()">إعادة</button>
       </div>
     </div>
+    
+    <!-- إعلان في الأسفل -->
+    <div class="ad-container">
+      <div class="ad-label">إعلان</div>
+      <iframe class="ad-iframe" src="https://otieu.com/4/9681086" scrolling="no"></iframe>
+    </div>
   </div>
-
   <script>
     // دالة تفعيل الوضع الليلي
     function toggleDarkMode() {
